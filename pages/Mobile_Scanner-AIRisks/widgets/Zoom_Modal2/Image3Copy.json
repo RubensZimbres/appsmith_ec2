@@ -1,0 +1,29 @@
+{
+  "borderRadius": "0px",
+  "bottomRow": 51,
+  "boxShadow": "none",
+  "defaultImage": "https://cdn3.iconfinder.com/data/icons/brands-applications/512/File-512.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "image": "{{selected_files.selectedItem.base64}}",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "maxZoomLevel": 8,
+  "objectFit": "contain",
+  "parentColumnSpace": 8,
+  "parentId": "80wzwajsst",
+  "parentRowSpace": 10,
+  "rightColumn": 64,
+  "topRow": 6,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "2bewgakjx9",
+  "widgetName": "Image3Copy"
+}

@@ -1,0 +1,29 @@
+{
+  "borderRadius": "0px",
+  "bottomRow": 57,
+  "boxShadow": "none",
+  "buttonColor": "#03B365",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 47,
+  "onClick": "{{closeModal('Zoom_Modal2')}}",
+  "parentId": "80wzwajsst",
+  "recaptchaType": "V3",
+  "rightColumn": 63,
+  "text": "Close",
+  "topRow": 53,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "lfiwss1u3w",
+  "widgetName": "Button13Copy"
+}

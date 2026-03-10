@@ -1,0 +1,34 @@
+{
+  "borderRadius": "0px",
+  "bottomRow": 16,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "System Default",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 6.8125,
+  "parentId": "ozvpoudxz2",
+  "parentRowSpace": 10,
+  "rightColumn": 64,
+  "text": "Are you sure you want to delete the file?\n\n{{File_List.selectedItem.fileName}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 5,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "oypa9ad1tg",
+  "widgetName": "Text13"
+}

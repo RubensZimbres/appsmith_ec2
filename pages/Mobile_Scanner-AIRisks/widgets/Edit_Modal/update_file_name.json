@@ -1,0 +1,47 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "0px",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultText": "{{File_List.selectedItem.fileName}}",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "/static/media/icon.9f505595.svg",
+  "inputType": "TEXT",
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "true",
+  "key": "auxyd97lu3",
+  "label": "",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 18,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "parentColumnSpace": 6.9375,
+  "parentId": "6i7m9kpuky",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "rightColumn": 64,
+  "topRow": 6,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "true",
+  "version": 2,
+  "widgetId": "uabsu3mjt3",
+  "widgetName": "update_file_name"
+}

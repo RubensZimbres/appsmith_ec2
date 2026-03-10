@@ -1,0 +1,67 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 506,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{{ \n  { \n    \"queryData\": QueryExposure.data?.fileData ? \"data:image/png;base64,\" + QueryExposure.data.fileData : \"\",\n    \"explanation\": \"This <b>Exposure Path Graph</b> visualizes AI Data Eligibility and Ingestion Signals. It evaluates data entering models by tracing from <b>Sources</b> (assessing data sensitivity and eligibility status) through <b>Pre-Ingestion Contexts</b>. Critical junctures occur at <b>Orchestration & Exposure Layers</b> (where agents or tools process data), ultimately crossing into <b>External Execution Boundaries</b>. The graph flags restricted data crossing boundaries and undeclared ingestion flows.\"\n  } \n}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "rtydgvt759",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 351,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 321,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 19.59375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "srcDoc": {
+    "css": ":root {\n  --bg-color: #ffffff;\n  --primary: #2c3e50;\n  --accent: #3498db;\n  --text: #333;\n  --border: #e0e0e0;\n  --light-bg: #f8f9fa;\n  --boundary-high: #e74c3c;\n  --exposure-layer: #e67e22;\n  --data-source: #3498db;\n  --context-node: #95a5a6;\n}\n\nbody {\n  margin: 0;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  background-color: transparent;\n}\n\n.diagram-card {\n  background: var(--bg-color);\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  border: 1px solid var(--border);\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n}\n\n.header {\n  padding: 15px 20px;\n  border-bottom: 1px solid var(--border);\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--light-bg);\n}\n\n.header h3 {\n  margin: 0;\n  color: var(--primary);\n  font-size: 1.1rem;\n}\n\n.tag {\n  background: var(--exposure-layer);\n  color: white;\n  padding: 2px 8px;\n  border-radius: 4px;\n  font-size: 0.8rem;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n\n.content-wrapper {\n  display: flex;\n  flex: 1;\n  overflow: hidden;\n}\n\n.image-container {\n  flex: 2;\n  padding: 20px;\n  background: #ffffff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-right: 1px solid var(--border);\n  overflow: auto;\n}\n\nimg {\n  max-width: 100%;\n  max-height: 100%;\n  object-fit: contain;\n  border-radius: 4px;\n  transition: transform 0.2s;\n}\n\nimg:hover {\n  transform: scale(1.02);\n}\n\n.info-panel {\n  flex: 1;\n  padding: 20px;\n  background: var(--light-bg);\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n}\n\n.info-panel h4 {\n  margin-top: 0;\n  color: var(--primary);\n  border-bottom: 2px solid var(--accent);\n  padding-bottom: 8px;\n  margin-bottom: 15px;\n}\n\n.info-panel p {\n  color: #555;\n  line-height: 1.6;\n  font-size: 0.95rem;\n  background: #fff;\n  padding: 15px;\n  border-radius: 6px;\n  border: 1px solid var(--border);\n}\n\n.legend {\n  margin-top: auto;\n  padding-top: 20px;\n}\n\n.legend-item {\n  display: flex;\n  align-items: center;\n  margin-bottom: 10px;\n  font-size: 0.85rem;\n  color: #444;\n}\n\n.legend-item b {\n  margin-right: 5px;\n  color: var(--primary);\n}\n\n.dot {\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n  margin-right: 10px;\n  flex-shrink: 0;\n}\n\n/* Node Taxonomy Colors */\n.source {\n  background-color: var(--data-source);\n}\n\n.transform {\n  background-color: var(--context-node);\n}\n\n.boundary {\n  background-color: var(--exposure-layer);\n}\n\n.sink {\n  background-color: var(--boundary-high);\n}\n\n.icon {\n  margin-right: 5px;\n}\n\n@media (max-width: 768px) {\n  .content-wrapper {\n    flex-direction: column;\n  }\n  .image-container {\n    border-right: none;\n    border-bottom: 1px solid var(--border);\n    min-height: 300px;\n  }\n}",
+    "html": "<div class=\"diagram-card\">\n    <div class=\"header\">\n        <h3>AI Data Eligibility & Exposure Map</h3>\n        <span class=\"tag\">Ingestion Signals</span>\n    </div>\n\n    <div class=\"content-wrapper\">\n        <div class=\"image-container\">\n            <img id=\"diagram-img\" src=\"\" alt=\"Loading Exposure Diagram...\">\n        </div>\n\n        <div class=\"info-panel\">\n            <h4><span class=\"icon\">🚨</span> Path & Eligibility Analysis</h4>\n            <p id=\"explanation-text\">Waiting for data...</p>\n            \n            <div class=\"legend\">\n                <div class=\"legend-item\">\n                    <span class=\"dot source\"></span> <b>Data Sources:</b> API, DB Reads (Eligibility Check)\n                </div>\n                <div class=\"legend-item\">\n                    <span class=\"dot transform\"></span> <b>Pre-Ingestion Context:</b> Prompts, Formatting\n                </div>\n                <div class=\"legend-item\">\n                    <span class=\"dot boundary\"></span> <b>Exposure Layers:</b> Agents, Orchestration, RAG\n                </div>\n                <div class=\"legend-item\">\n                    <span class=\"dot sink\"></span> <b>Execution Boundaries:</b> External Models, Vector DBs\n                </div>\n            </div>\n        </div>\n    </div>\n</div>",
+    "js": "appsmith.onReady(() => {\n  appsmith.onModelChange(model => {\n    const imgElement = document.getElementById('diagram-img');\n    const textElement = document.getElementById('explanation-text');\n\n    // 1. APPLY TO IMAGE\n    if (model.queryData && model.queryData.length > 30) {\n      imgElement.src = model.queryData;\n    } else {\n      imgElement.alt = \"Waiting for Exposure Map data...\";\n    }\n\n    // 2. APPLY TEXT\n    if (model.explanation) {\n      textElement.innerHTML = model.explanation;\n    }\n  });\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 409,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ":root {\n    --bg-color: #ffffff;\n    --primary: #2c3e50;\n    --accent: #3498db;\n    --text: #333;\n    --border: #e0e0e0;\n    --light-bg: #f8f9fa;\n    --boundary-high: #e74c3c;\n    --exposure-layer: #e67e22;\n    --data-source: #3498db;\n    --context-node: #95a5a6;\n}\n\nbody {\n    margin: 0;\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    background-color: transparent;\n}\n\n.diagram-card {\n    background: var(--bg-color);\n    border-radius: 8px;\n    box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n    overflow: hidden;\n    border: 1px solid var(--border);\n    display: flex;\n    flex-direction: column;\n    height: 100vh;\n}\n\n.header {\n    padding: 15px 20px;\n    border-bottom: 1px solid var(--border);\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    background: var(--light-bg);\n}\n\n.header h3 {\n    margin: 0;\n    color: var(--primary);\n    font-size: 1.1rem;\n}\n\n.tag {\n    background: var(--exposure-layer);\n    color: white;\n    padding: 2px 8px;\n    border-radius: 4px;\n    font-size: 0.8rem;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n}\n\n.content-wrapper {\n    display: flex;\n    flex: 1;\n    overflow: hidden;\n}\n\n.image-container {\n    flex: 2;\n    padding: 20px;\n    background: #ffffff;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-right: 1px solid var(--border);\n    overflow: auto;\n}\n\nimg {\n    max-width: 100%;\n    max-height: 100%;\n    object-fit: contain;\n    border-radius: 4px;\n    transition: transform 0.2s;\n}\n\nimg:hover {\n    transform: scale(1.02);\n}\n\n.info-panel {\n    flex: 1;\n    padding: 20px;\n    background: var(--light-bg);\n    display: flex;\n    flex-direction: column;\n    overflow-y: auto;\n}\n\n.info-panel h4 {\n    margin-top: 0;\n    color: var(--primary);\n    border-bottom: 2px solid var(--accent);\n    padding-bottom: 8px;\n    margin-bottom: 15px;\n}\n\n.info-panel p {\n    color: #555;\n    line-height: 1.6;\n    font-size: 0.95rem;\n    background: #fff;\n    padding: 15px;\n    border-radius: 6px;\n    border: 1px solid var(--border);\n}\n\n.legend {\n    margin-top: auto;\n    padding-top: 20px;\n}\n\n.legend-item {\n    display: flex;\n    align-items: center;\n    margin-bottom: 10px;\n    font-size: 0.85rem;\n    color: #444;\n}\n\n.legend-item b {\n    margin-right: 5px;\n    color: var(--primary);\n}\n\n.dot {\n    width: 12px;\n    height: 12px;\n    border-radius: 50%;\n    margin-right: 10px;\n    flex-shrink: 0;\n}\n\n/* Node Taxonomy Colors */\n.source { background-color: var(--data-source); }\n.transform { background-color: var(--context-node); }\n.boundary { background-color: var(--exposure-layer); }\n.sink { background-color: var(--boundary-high); }\n\n.icon { margin-right: 5px; }\n\n@media (max-width: 768px) {\n    .content-wrapper {\n        flex-direction: column;\n    }\n    .image-container {\n        border-right: none;\n        border-bottom: 1px solid var(--border);\n        min-height: 300px;\n    }\n}",
+    "html": "<div class=\"diagram-card\">\n    <div class=\"header\">\n        <h3>AI Data Eligibility & Exposure Map</h3>\n        <span class=\"tag\">Ingestion Signals</span>\n    </div>\n\n    <div class=\"content-wrapper\">\n        <div class=\"image-container\">\n            <img id=\"diagram-img\" src=\"\" alt=\"Loading Exposure Diagram...\">\n        </div>\n\n        <div class=\"info-panel\">\n            <h4><span class=\"icon\">🚨</span> Path & Eligibility Analysis</h4>\n            <p id=\"explanation-text\">Waiting for data...</p>\n            \n            <div class=\"legend\">\n                <div class=\"legend-item\">\n                    <span class=\"dot source\"></span> <b>Data Sources:</b> API, DB Reads (Eligibility Check)\n                </div>\n                <div class=\"legend-item\">\n                    <span class=\"dot transform\"></span> <b>Pre-Ingestion Context:</b> Prompts, Formatting\n                </div>\n                <div class=\"legend-item\">\n                    <span class=\"dot boundary\"></span> <b>Exposure Layers:</b> Agents, Orchestration, RAG\n                </div>\n                <div class=\"legend-item\">\n                    <span class=\"dot sink\"></span> <b>Execution Boundaries:</b> External Models, Vector DBs\n                </div>\n            </div>\n        </div>\n    </div>\n</div>",
+    "js": "appsmith.onReady(() => {\n    appsmith.onModelChange((model) => {\n        const imgElement = document.getElementById('diagram-img');\n        const textElement = document.getElementById('explanation-text');\n\n        // 1. APPLY TO IMAGE\n        if (model.queryData && model.queryData.length > 30) { \n            imgElement.src = model.queryData;\n        } else {\n            imgElement.alt = \"Waiting for Exposure Map data...\";\n        }\n\n        // 2. APPLY TEXT\n        if (model.explanation) {\n            textElement.innerHTML = model.explanation;\n        }\n    });\n});"
+  },
+  "version": 1,
+  "widgetId": "hp4j8yy48t",
+  "widgetName": "Custom5"
+}

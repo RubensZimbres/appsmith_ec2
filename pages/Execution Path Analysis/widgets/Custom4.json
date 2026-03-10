@@ -1,0 +1,67 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 409,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{{ \n  { \n    \"queryData\": \"data:image/png;base64,\" + QueryDataflow.data.fileData,\n    \"explanation\": \"This Directed Acyclic Graph (DAG) visualizes the AI execution dependencies detected in the repository. The <b>Red Node</b> (<code>predict_patient_outcomes</code>) represents an AI boundary where data exits the agent exposure layer to perform a model inference. The <b>Red Arrow</b> highlights the flow of data passing from the Backend Agent's orchestration layer directly into the execution environment without explicit eligibility validation.\"\n  } \n}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "rtydgvt759",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 259,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 229,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 19.59375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "srcDoc": {
+    "css": ":root {\n  --bg-color: #ffffff;\n  --primary: #2c3e50;\n  --accent: #3498db;\n  --text: #333;\n  --border: #e0e0e0;\n  --light-bg: #f8f9fa;\n  --critical: #e74c3c;\n  --safe: #27ae60;\n}\n\nbody {\n  margin: 0;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  background-color: transparent;\n}\n\n.diagram-card {\n  background: var(--bg-color);\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n  border: 1px solid var(--border);\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n}\n\n.header {\n  padding: 15px 20px;\n  border-bottom: 1px solid var(--border);\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--light-bg);\n}\n\n.header h3 {\n  margin: 0;\n  color: var(--primary);\n  font-size: 1.1rem;\n}\n\n.tag {\n  background: var(--primary);\n  color: white;\n  padding: 2px 8px;\n  border-radius: 4px;\n  font-size: 0.8rem;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n\n.content-wrapper {\n  display: flex;\n  flex: 1;\n  overflow: hidden;\n}\n\n.image-container {\n  flex: 2;\n  padding: 20px;\n  background: #ffffff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-right: 1px solid var(--border);\n  overflow: auto;\n}\n\nimg {\n  max-width: 100%;\n  max-height: 100%;\n  object-fit: contain;\n  border-radius: 4px;\n  transition: transform 0.2s;\n}\n\nimg:hover {\n  transform: scale(1.02);\n}\n\n.info-panel {\n  flex: 1;\n  padding: 20px;\n  background: var(--light-bg);\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n}\n\n.info-panel h4 {\n  margin-top: 0;\n  color: var(--primary);\n  border-bottom: 2px solid var(--accent);\n  padding-bottom: 8px;\n  margin-bottom: 15px;\n}\n\n.info-panel p {\n  color: #555;\n  line-height: 1.6;\n  font-size: 0.95rem;\n  background: #fff;\n  padding: 15px;\n  border-radius: 6px;\n  border: 1px solid var(--border);\n}\n\n.legend {\n  margin-top: auto;\n  padding-top: 20px;\n}\n\n.legend-item {\n  display: flex;\n  align-items: center;\n  margin-bottom: 8px;\n  font-size: 0.9rem;\n  color: #666;\n}\n\n.dot {\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  margin-right: 10px;\n}\n\n.line-red {\n  width: 20px;\n  height: 3px;\n  background: var(--critical);\n  margin-right: 10px;\n  position: relative;\n}\n\n.line-red::after {\n  content: \">\";\n  position: absolute;\n  right: -4px;\n  top: -6px;\n  color: var(--critical);\n  font-size: 10px;\n}\n\n.red {\n  background-color: var(--critical);\n}\n\n.green {\n  background-color: var(--safe);\n}\n\n.icon {\n  margin-right: 5px;\n}\n\n@media (max-width: 768px) {\n  .content-wrapper {\n    flex-direction: column;\n  }\n  .image-container {\n    border-right: none;\n    border-bottom: 1px solid var(--border);\n    min-height: 300px;\n  }\n}",
+    "html": "<div class=\"diagram-card\">\n    <div class=\"header\">\n        <h3>AI Execution & Boundary Egress Map</h3>\n        <span class=\"tag\">Execution Graph</span>\n    </div>\n\n    <div class=\"content-wrapper\">\n        <div class=\"image-container\">\n            <img id=\"diagram-img\" src=\"\" alt=\"Loading Execution Diagram...\">\n        </div>\n\n        <div class=\"info-panel\">\n            <h4><span class=\"icon\">🔍</span> Boundary Flow Analysis</h4>\n            <p id=\"explanation-text\">Waiting for data...</p>\n            \n            <div class=\"legend\">\n                <div class=\"legend-item\"><span class=\"dot red\"></span> Boundary Exposure Node</div>\n                <div class=\"legend-item\"><span class=\"dot green\"></span> Internal Processing</div>\n                <div class=\"legend-item\"><span class=\"line-red\"></span> Model Ingestion Flow</div>\n            </div>\n        </div>\n    </div>\n</div>",
+    "js": "appsmith.onReady(() => {\n  appsmith.onModelChange(model => {\n    const imgElement = document.getElementById('diagram-img');\n    const textElement = document.getElementById('explanation-text');\n\n    // 1. PARSE THE URL (or Base64 data)\n    let url = \"\";\n    if (model.queryData) {\n      if (Array.isArray(model.queryData) && model.queryData.length > 0) {\n        url = model.queryData[0].signedUrl || model.queryData[0].url || \"\";\n      } else if (typeof model.queryData === 'object' && !Array.isArray(model.queryData)) {\n        url = model.queryData.signedUrl || model.queryData.url || \"\";\n      } else if (typeof model.queryData === 'string') {\n        url = model.queryData;\n      }\n    }\n\n    // 2. APPLY TO IMAGE\n    if (url) {\n      imgElement.src = url;\n    } else {\n      imgElement.alt = \"Image data not found.\";\n    }\n\n    // 3. APPLY TEXT\n    if (model.explanation) {\n      textElement.innerHTML = model.explanation;\n    }\n  });\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 314,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ":root {\n    --bg-color: #ffffff;\n    --primary: #2c3e50;\n    --accent: #3498db;\n    --text: #333;\n    --border: #e0e0e0;\n    --light-bg: #f8f9fa;\n    --critical: #e74c3c;\n    --safe: #27ae60;\n}\n\nbody {\n    margin: 0;\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    background-color: transparent;\n}\n\n.diagram-card {\n    background: var(--bg-color);\n    border-radius: 8px;\n    box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n    overflow: hidden;\n    border: 1px solid var(--border);\n    display: flex;\n    flex-direction: column;\n    height: 100vh;\n}\n\n.header {\n    padding: 15px 20px;\n    border-bottom: 1px solid var(--border);\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    background: var(--light-bg);\n}\n\n.header h3 {\n    margin: 0;\n    color: var(--primary);\n    font-size: 1.1rem;\n}\n\n.tag {\n    background: var(--primary);\n    color: white;\n    padding: 2px 8px;\n    border-radius: 4px;\n    font-size: 0.8rem;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n}\n\n.content-wrapper {\n    display: flex;\n    flex: 1;\n    overflow: hidden;\n}\n\n.image-container {\n    flex: 2;\n    padding: 20px;\n    background: #ffffff;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-right: 1px solid var(--border);\n    overflow: auto;\n}\n\nimg {\n    max-width: 100%;\n    max-height: 100%;\n    object-fit: contain;\n    border-radius: 4px;\n    transition: transform 0.2s;\n}\n\nimg:hover {\n    transform: scale(1.02);\n}\n\n.info-panel {\n    flex: 1;\n    padding: 20px;\n    background: var(--light-bg);\n    display: flex;\n    flex-direction: column;\n    overflow-y: auto;\n}\n\n.info-panel h4 {\n    margin-top: 0;\n    color: var(--primary);\n    border-bottom: 2px solid var(--accent);\n    padding-bottom: 8px;\n    margin-bottom: 15px;\n}\n\n.info-panel p {\n    color: #555;\n    line-height: 1.6;\n    font-size: 0.95rem;\n    background: #fff;\n    padding: 15px;\n    border-radius: 6px;\n    border: 1px solid var(--border);\n}\n\n.legend {\n    margin-top: auto;\n    padding-top: 20px;\n}\n\n.legend-item {\n    display: flex;\n    align-items: center;\n    margin-bottom: 8px;\n    font-size: 0.9rem;\n    color: #666;\n}\n\n.dot {\n    width: 10px;\n    height: 10px;\n    border-radius: 50%;\n    margin-right: 10px;\n}\n\n.line-red {\n    width: 20px;\n    height: 3px;\n    background: var(--critical);\n    margin-right: 10px;\n    position: relative;\n}\n\n.line-red::after {\n    content: '>';\n    position: absolute;\n    right: -4px;\n    top: -6px;\n    color: var(--critical);\n    font-size: 10px;\n}\n\n.red { background-color: var(--critical); }\n.green { background-color: var(--safe); }\n.icon { margin-right: 5px; }\n\n@media (max-width: 768px) {\n    .content-wrapper {\n        flex-direction: column;\n    }\n    .image-container {\n        border-right: none;\n        border-bottom: 1px solid var(--border);\n        min-height: 300px;\n    }\n}",
+    "html": "<div class=\"diagram-card\">\n    <div class=\"header\">\n        <h3>AI Execution & Boundary Egress Map</h3>\n        <span class=\"tag\">Execution Graph</span>\n    </div>\n\n    <div class=\"content-wrapper\">\n        <div class=\"image-container\">\n            <img id=\"diagram-img\" src=\"\" alt=\"Loading Execution Diagram...\">\n        </div>\n\n        <div class=\"info-panel\">\n            <h4><span class=\"icon\">🔍</span> Boundary Flow Analysis</h4>\n            <p id=\"explanation-text\">Waiting for data...</p>\n            \n            <div class=\"legend\">\n                <div class=\"legend-item\"><span class=\"dot red\"></span> Boundary Exposure Node</div>\n                <div class=\"legend-item\"><span class=\"dot green\"></span> Internal Processing</div>\n                <div class=\"legend-item\"><span class=\"line-red\"></span> Model Ingestion Flow</div>\n            </div>\n        </div>\n    </div>\n</div>",
+    "js": "appsmith.onReady(() => {\n    appsmith.onModelChange((model) => {\n        const imgElement = document.getElementById('diagram-img');\n        const textElement = document.getElementById('explanation-text');\n\n        // 1. PARSE THE URL (or Base64 data)\n        let url = \"\";\n        \n        if (model.queryData) {\n            if (Array.isArray(model.queryData) && model.queryData.length > 0) {\n                url = model.queryData[0].signedUrl || model.queryData[0].url || \"\";\n            } \n            else if (typeof model.queryData === 'object' && !Array.isArray(model.queryData)) {\n                url = model.queryData.signedUrl || model.queryData.url || \"\";\n            } \n            else if (typeof model.queryData === 'string') {\n                url = model.queryData;\n            }\n        }\n\n        // 2. APPLY TO IMAGE\n        if (url) {\n            imgElement.src = url;\n        } else {\n            imgElement.alt = \"Image data not found.\";\n        }\n\n        // 3. APPLY TEXT\n        if (model.explanation) {\n            textElement.innerHTML = model.explanation;\n        }\n    });\n});"
+  },
+  "version": 1,
+  "widgetId": "65tp2ll72m",
+  "widgetName": "Custom4"
+}
