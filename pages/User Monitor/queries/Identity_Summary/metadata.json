@@ -57,7 +57,7 @@
           }
         },
         "path": {
-          "data": "identities.csv"
+          "data": "identity_summary.csv"
         },
         "read": {
           "dataType": {
