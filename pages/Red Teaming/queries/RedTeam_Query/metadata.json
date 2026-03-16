@@ -1,6 +1,6 @@
 {
   "gitSyncId": "69a9c6456a15c43942716db9_c69a3ac9-2c81-4e51-b25e-2cd99b5c4a85",
-  "id": "Red Teaming_Query1",
+  "id": "Red Teaming_RedTeam_Query",
   "pluginId": "amazons3-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -79,9 +79,9 @@
       "pluginId": "amazons3-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Query1",
+    "name": "RedTeam_Query",
     "pageId": "Red Teaming",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }
