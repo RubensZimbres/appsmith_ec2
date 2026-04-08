@@ -48,10 +48,6 @@
     {
       "id": "Red Teaming",
       "isDefault": false
-    },
-    {
-      "id": "SDK Monitor",
-      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
