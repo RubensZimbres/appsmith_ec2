@@ -48,6 +48,10 @@
     {
       "id": "Red Teaming",
       "isDefault": false
+    },
+    {
+      "id": "User Monitor New",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
