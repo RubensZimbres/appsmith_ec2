@@ -81,7 +81,7 @@
     "dynamicBindingPathList": [],
     "name": "Identities_100",
     "pageId": "User Monitor New",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }
 }
