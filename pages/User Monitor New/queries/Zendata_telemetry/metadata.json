@@ -81,7 +81,7 @@
     "dynamicBindingPathList": [],
     "name": "Zendata_telemetry",
     "pageId": "User Monitor New",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }

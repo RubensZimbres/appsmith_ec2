@@ -81,7 +81,7 @@
     "dynamicBindingPathList": [],
     "name": "Events_jsonl",
     "pageId": "User Monitor New",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }

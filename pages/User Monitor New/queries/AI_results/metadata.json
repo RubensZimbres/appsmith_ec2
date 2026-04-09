@@ -81,7 +81,7 @@
     "dynamicBindingPathList": [],
     "name": "AI_results",
     "pageId": "User Monitor New",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }
