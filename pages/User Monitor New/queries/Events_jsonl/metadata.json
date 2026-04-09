@@ -69,7 +69,7 @@
         }
       },
       "paginationType": "NONE",
-      "timeoutInMillisecond": 10000
+      "timeoutInMillisecond": 70000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -81,7 +81,7 @@
     "dynamicBindingPathList": [],
     "name": "Events_jsonl",
     "pageId": "User Monitor New",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": true
   }
 }
