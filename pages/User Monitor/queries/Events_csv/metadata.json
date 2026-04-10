@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "69d5670042d2761c90c133cf_936dce9a-0d73-4cbc-9cb0-687a80325013",
-  "id": "User Monitor New_Identities_100",
+  "gitSyncId": "69d5670042d2761c90c133cf_4d555aeb-cd84-4794-a248-60652ea79675",
+  "id": "User Monitor_Events_csv",
   "pluginId": "amazons3-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -57,7 +57,7 @@
           }
         },
         "path": {
-          "data": "identities_100.csv"
+          "data": "events.csv"
         },
         "read": {
           "dataType": {
@@ -69,7 +69,7 @@
         }
       },
       "paginationType": "NONE",
-      "timeoutInMillisecond": 60000
+      "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -79,9 +79,9 @@
       "pluginId": "amazons3-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Identities_100",
-    "pageId": "User Monitor New",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "name": "Events_csv",
+    "pageId": "User Monitor",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": true
   }
 }

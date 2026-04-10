@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "69d5670042d2761c90c133cf_b990430a-f8f6-4d05-9f17-90e84798d861",
-  "id": "User Monitor New_AI_results",
+  "gitSyncId": "69d5670042d2761c90c133cf_223299cf-c65b-41cb-9bc1-377539f50b30",
+  "id": "User Monitor_Events_jsonl",
   "pluginId": "amazons3-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -57,7 +57,7 @@
           }
         },
         "path": {
-          "data": "ai_tester_results_20260409_083419.json"
+          "data": "events.jsonl"
         },
         "read": {
           "dataType": {
@@ -69,7 +69,7 @@
         }
       },
       "paginationType": "NONE",
-      "timeoutInMillisecond": 10000
+      "timeoutInMillisecond": 70000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -79,9 +79,9 @@
       "pluginId": "amazons3-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "AI_results",
-    "pageId": "User Monitor New",
-    "runBehaviour": "AUTOMATIC",
+    "name": "Events_jsonl",
+    "pageId": "User Monitor",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }
 }

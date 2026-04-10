@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "69d5670042d2761c90c133cf_61fe965f-8573-4afa-95db-a55897fe7b1e",
-  "id": "User Monitor New_Zendata_telemetry",
+  "gitSyncId": "69d5670042d2761c90c133cf_b990430a-f8f6-4d05-9f17-90e84798d861",
+  "id": "User Monitor_AI_results",
   "pluginId": "amazons3-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -57,11 +57,11 @@
           }
         },
         "path": {
-          "data": "zendata_telemetry.json"
+          "data": "ai_tester_results_20260409_083419.json"
         },
         "read": {
           "dataType": {
-            "data": "YES"
+            "data": "NO"
           }
         },
         "smartSubstitution": {
@@ -79,8 +79,8 @@
       "pluginId": "amazons3-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Zendata_telemetry",
-    "pageId": "User Monitor New",
+    "name": "AI_results",
+    "pageId": "User Monitor",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": true
   }

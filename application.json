@@ -42,15 +42,11 @@
       "isDefault": false
     },
     {
-      "id": "User Monitor",
-      "isDefault": false
-    },
-    {
       "id": "Red Teaming",
       "isDefault": false
     },
     {
-      "id": "User Monitor New",
+      "id": "User Monitor",
       "isDefault": false
     }
   ],
