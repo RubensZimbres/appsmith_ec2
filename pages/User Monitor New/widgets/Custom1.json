@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 70,
+  "bottomRow": 106,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{\n(function() {\n\tfunction decode(data) {\n\t\tif (!data) return null;\n\t\ttry { return atob(data); } catch(e) { return data; }\n\t}\n\tfunction parseCSV(text) {\n\t\tif (!text) return [];\n\t\tvar lines = text.replace(/\\r\\n/g, '\\n').replace(/\\r/g, '\\n').split('\\n').filter(function(l) { return l.trim(); });\n\t\tif (!lines.length) return [];\n\t\tvar headers = lines[0].split(',');\n\t\treturn lines.slice(1).map(function(line) {\n\t\t\tvar values = line.split(',');\n\t\t\treturn headers.reduce(function(obj, h, i) {\n\t\t\t\tobj[h.trim()] = values[i] ? values[i].trim() : '';\n\t\t\t\treturn obj;\n\t\t\t}, {});\n\t\t});\n\t}\n\tfunction parseJSON(data) {\n\t\tif (!data) return {};\n\t\ttry { return JSON.parse(decode(data)); } catch(e) { return {}; }\n\t}\n\tfunction safeFile(q) {\n\t\ttry { return q && q.data && q.data.fileData; } catch(e) { return null; }\n\t}\n\treturn {\n\t\t\"identity\":          parseCSV(decode(safeFile(Identities_100))),\n\t\t\"summary\":           parseCSV(decode(safeFile(Zendata_summary))),\n\t\t\"zendata_telemetry\": parseJSON(safeFile(Zendata_telemetry)),\n\t\t\"events\":            parseCSV(decode(safeFile(Events_jsonl)))\n\t};\n})()\n}}",
   "dynamicBindingPathList": [
