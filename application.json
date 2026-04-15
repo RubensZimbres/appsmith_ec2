@@ -48,6 +48,10 @@
     {
       "id": "User Monitor",
       "isDefault": false
+    },
+    {
+      "id": "AWS AI Scanner",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
