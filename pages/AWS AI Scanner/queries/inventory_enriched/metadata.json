@@ -57,11 +57,11 @@
           }
         },
         "path": {
-          "data": "asset_inventory_enriched_20260415-161606.jsonl"
+          "data": "asset_inventory_enriched.jsonl"
         },
         "read": {
           "dataType": {
-            "data": "YES"
+            "data": "NO"
           }
         },
         "smartSubstitution": {

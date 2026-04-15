@@ -61,7 +61,7 @@
         },
         "read": {
           "dataType": {
-            "data": "YES"
+            "data": "NO"
           }
         },
         "smartSubstitution": {
