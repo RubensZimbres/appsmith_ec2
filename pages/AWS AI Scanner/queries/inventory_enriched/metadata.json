@@ -81,7 +81,7 @@
     "dynamicBindingPathList": [],
     "name": "inventory_enriched",
     "pageId": "AWS AI Scanner",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }
