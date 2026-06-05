@@ -11,7 +11,7 @@
           "data": ""
         },
         "bucket": {
-          "data": "zendata-web-scanner-dev"
+          "data": "zendata-web-scanner-dev-new"
         },
         "command": {
           "data": "READ_FILE"

@@ -11,7 +11,7 @@
           "data": ""
         },
         "bucket": {
-          "data": "zendata-s3-test"
+          "data": "zendata-s3-test-new"
         },
         "command": {
           "data": "READ_FILE"

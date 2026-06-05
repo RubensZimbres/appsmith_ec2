@@ -11,7 +11,7 @@
           "data": ""
         },
         "bucket": {
-          "data": "aws-ai-scanner"
+          "data": "aws-ai-scanner-new"
         },
         "command": {
           "data": "READ_FILE"
