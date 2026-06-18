@@ -57,7 +57,7 @@
           }
         },
         "path": {
-          "data": "RubensZimbres/flash-attention-huggingface/report.json"
+          "data": "orgs-scanned-aggregated/RubensZimbres/report.json"
         },
         "read": {
           "dataType": {
