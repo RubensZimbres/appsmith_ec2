@@ -11,7 +11,7 @@
           "data": ""
         },
         "bucket": {
-          "data": "ai-code-scanner-new"
+          "data": "ai-code-scanner-apr26-new"
         },
         "command": {
           "data": "READ_FILE"
@@ -57,7 +57,7 @@
           }
         },
         "path": {
-          "data": "ai-scan-results.json"
+          "data": "RubensZimbres/flash-attention-huggingface/ai-scan-results.json"
         },
         "read": {
           "dataType": {
