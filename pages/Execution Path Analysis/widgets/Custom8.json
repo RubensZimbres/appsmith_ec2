@@ -54,7 +54,7 @@
     "js": ""
   },
   "theme": "{{appsmith.theme}}",
-  "topRow": 49,
+  "topRow": 47,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": "",
