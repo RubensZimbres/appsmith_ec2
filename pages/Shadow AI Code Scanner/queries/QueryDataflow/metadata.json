@@ -1,6 +1,6 @@
 {
   "gitSyncId": "697a0c2becbe3e1d0a18a558_be41773d-d89c-47ca-8a16-9daf1a312149",
-  "id": "Execution Path Analysis_QueryDataflow",
+  "id": "Shadow AI Code Scanner_QueryDataflow",
   "pluginId": "amazons3-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -80,7 +80,7 @@
     },
     "dynamicBindingPathList": [],
     "name": "QueryDataflow",
-    "pageId": "Execution Path Analysis",
+    "pageId": "Shadow AI Code Scanner",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }

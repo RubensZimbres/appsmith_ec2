@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "69d5670042d2761c90c133cf_30451042-e909-4e3c-8b63-4a252964ff4c",
-  "id": "AWS AI Scanner_inventory",
+  "gitSyncId": "69d5670042d2761c90c133cf_b7ab8ad8-0f11-4e35-8e3c-d93d44234eda",
+  "id": "Shadow AI Cloud Scanner_model_catalogue",
   "pluginId": "amazons3-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -57,7 +57,7 @@
           }
         },
         "path": {
-          "data": "asset_inventory.jsonl"
+          "data": "model_catalogue.jsonl"
         },
         "read": {
           "dataType": {
@@ -79,8 +79,8 @@
       "pluginId": "amazons3-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "inventory",
-    "pageId": "AWS AI Scanner",
+    "name": "model_catalogue",
+    "pageId": "Shadow AI Cloud Scanner",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
   }

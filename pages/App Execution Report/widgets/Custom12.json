@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 126,
+  "bottomRow": 102,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{\n  {\n    \"current\": {\n      \"cookies\": Query_Cookies.data?.fileData ? JSON.parse(Query_Cookies.data.fileData) : [],\n      \"scripts\": QueryScript.data?.fileData ? JSON.parse(QueryScript.data.fileData) : {},\n      \"network\": Query_Network_JSON.data?.fileData ? JSON.parse(Query_Network_JSON.data.fileData) : {},\n      \"logs\": Query_Network_Logs.data?.fileData ? JSON.parse(Query_Network_Logs.data.fileData) : []\n    },\n    \"previous\": null, \n    \"persona\": \"Adult\"\n  }\n}}",
   "dynamicBindingPathList": [

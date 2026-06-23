@@ -26,11 +26,15 @@
       "isDefault": false
     },
     {
+      "id": "Shadow AI Cloud Scanner",
+      "isDefault": false
+    },
+    {
       "id": "Mobile_Scanner-AIRisks",
       "isDefault": false
     },
     {
-      "id": "Execution Path Analysis",
+      "id": "Shadow AI Code Scanner",
       "isDefault": false
     },
     {
@@ -47,10 +51,6 @@
     },
     {
       "id": "User Monitor",
-      "isDefault": false
-    },
-    {
-      "id": "AWS AI Scanner",
       "isDefault": false
     }
   ],

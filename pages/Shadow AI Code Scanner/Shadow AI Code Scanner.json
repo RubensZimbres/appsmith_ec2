@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Execution Path Analysis",
-    "slug": "execution-path-analysis"
+    "name": "Shadow AI Code Scanner",
+    "slug": "shadow-ai-code-scanner"
   }
 }
