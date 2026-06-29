@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 485,
+  "bottomRow": 608,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{\n  {\n    \"data_scan_results\": QueryCodeScanner.data?.fileData ? JSON.parse(QueryCodeScanner.data.fileData) : {},\n    \"data\": Query1.data?.fileData ? JSON.parse(Query1.data.fileData) : {}\n  }\n}}\n",
   "dynamicBindingPathList": [

@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 627,
+  "bottomRow": 750,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{\n  {\n    \"data_scan_results\": QueryCodeScanner.data?.fileData ? JSON.parse(QueryCodeScanner.data.fileData) : {},\n    \"data\": Query1.data?.fileData ? JSON.parse(Query1.data.fileData) : {}\n  }\n}}\n",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
     "js": ""
   },
   "theme": "{{appsmith.theme}}",
-  "topRow": 485,
+  "topRow": 608,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": "",
