@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 105,
+  "bottomRow": 95,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{\n  (function() {\n    // ⚠️ REPLACE \"YOUR_QUERY_NAME\" WITH THE ACTUAL NAME OF YOUR S3 QUERY ⚠️\n    const incomingData = RedTeam_Query.data; \n\n    if (!incomingData) return { \"red_team_data\": {} };\n\n    // Case 1: Appsmith automatically parsed the JSON directly from S3\n    if (typeof incomingData === 'object' && incomingData.metadata) {\n      return { \"red_team_data\": incomingData };\n    }\n\n    // Case 2: The JSON is wrapped inside 'fileData' or 'body' (common for S3 plugins)\n    let textData = incomingData.fileData || incomingData.body || incomingData;\n\n    try {\n      // Attempt base64 decode just in case Appsmith encoded the string\n      try { textData = atob(textData); } catch(e) {}\n      \n      return { \n        \"red_team_data\": typeof textData === 'string' ? JSON.parse(textData) : textData \n      };\n    } catch (e) {\n      return { \"red_team_data\": {} };\n    }\n  })()\n}}",
   "dynamicBindingPathList": [
